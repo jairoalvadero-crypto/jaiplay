@@ -1,0 +1,33 @@
+name: jaiplay
+description: Reproductor de música con streaming de YouTube.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  youtube_explode_dart:
+    path: ./packages/youtube_explode_dart
+  youtube_music_explode_dart:
+    path: ./packages/youtube_music_explode_dart
+  just_audio: ^0.9.40
+  just_audio_background: ^0.0.1-beta.13
+  cached_network_image: ^3.4.1
+  shared_preferences: ^2.3.0
+  http: ^1.2.0
+  audio_service: ^0.18.19
+  permission_handler: ^11.3.1
+  path_provider: ^2.1.0
+  connectivity_plus: ^7.3.2
+  image_picker: ^1.2.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon.png
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
